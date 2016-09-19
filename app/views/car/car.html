@@ -1,0 +1,256 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>报告中心</title>  
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">  
+ 
+</head>
+
+<body>		
+  
+<!-- 头文件 [begin] --> 
+<div class="header">
+    <div class="logo"><a href="#"><img src="images/logo.gif" alt="blueview"></a></div> 
+    <div class="nav"> 
+            <a href="#" class="cur">报告中心</a>
+            <a href="#">数据详情</a> 
+    </div> 
+    <div class="siderbar">欢迎您：<a href="#" class="blue">BlueView</a></div>
+</div>   
+<!-- 头文件 [end] -->  
+ 
+ 
+
+<div class="clearer"></div> 
+
+<div class="wrap">
+  
+<!-- 查询条件 [begin] --> 
+<div class="main-all"> 
+    <div class="title">查询条件</div>
+    <ul class="ul01 clearfix">
+        <li>
+          <div style="width: 50px;">时间段：</div>
+          <div><input name="" type="text" value="09.01 - 09.30"></div>
+        </li>
+        <li>
+            <div>
+              <div style="width: 50px;">时间段：</div>
+              <div style="width: 150px;">车型A</div>
+              <a href="#" class="blue">选择</a>
+            </div>
+            <div>
+              <div style="width: 50px;">属性：</div>
+              <div style="width: 150px;">油耗</div>
+              <a href="#" class="blue">选择</a>
+            </div>
+            <div>情感倾向：<input name="" type="checkbox" value=""> 全部　<input name="" type="checkbox" value=""> 正面　<input name="" type="checkbox" value=""> 中性　<input name="" type="checkbox" value=""> 负面　</div>
+        </li>
+        <li>
+            <div>媒体类型：<input name="" type="checkbox" value=""> 全部　<input name="" type="checkbox" value=""> 论坛　<input name="" type="checkbox" value=""> 微信　<input name="" type="checkbox" value=""> 微博　</div>
+            <div>网站：<input name="" type="text" value="请输入网站名称"></div> 
+        </li>
+    
+    </ul>
+
+</div>   
+<!-- 查询条件 [end] -->  
+
+<!-- 讨论趋势 [begin] --> 
+<div class="main-ban">
+  <div class="title">
+        <div class="right0"><a href="#" class="blue">设置</a>　 <select name="">
+          <option>导出</option>
+        </select></div>
+        讨论趋势
+    </div>
+    <div class="box">
+      <area-chart config="config" data="data1" id = 'testChar'></area-chart>
+    </div>
+</div>
+<!-- 讨论趋势 [end] -->  
+
+<!-- 同时提及的品牌/产品 [begin] --> 
+<div class="main-ban f-right">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        同时提及的品牌/产品
+    </div>
+    <div class="box">
+      <bar-chart config="config" data="data2"></bar-chart>
+    </div>
+</div>
+<!-- 同时提及的品牌/产品 [end] -->  
+
+<!-- 讨论属性分布 [begin] --> 
+<div class="main-ban">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        讨论属性分布
+    </div>
+    <div class="box">
+      <area-chart config="config" data="data3"></area-chart>
+    </div>
+</div>
+<!-- 讨论属性分布 [end] -->  
+
+<!-- 热门帖子 [begin] --> 
+<div class="main-ban f-right">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        热门帖子
+    </div>
+    <div class="box">
+    <table border="0" cellspacing="0" cellpadding="0" st-table="rowCollection" class="table table-striped">
+        <tr>
+          <td width="200">标题</td>
+          <td width="99">网站</td>
+          <td width="100">发帖时间</td>
+          <td width="70">回复数</td>
+        </tr>
+        <tr ng-repeat="row in rowCollection">
+          <td>{{row.title}}</td>
+          <td>{{row.net}}</td>
+          <td>{{row.createTime}}</td>
+          <td>{{row.reply}}</td>
+        </tr>
+      </table>
+    </div>
+</div>
+<!-- 热门帖子 [end] -->  
+
+<!-- 热门关键字 [begin] --> 
+<div class="main-ban">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        热门关键字
+    </div>
+    <div class="box">
+      <words-cloud ng-model="testWords"></words-cloud>
+    </div>
+</div>
+<!-- 热门关键字 [end] -->  
+
+<!-- 情感分析 [begin] --> 
+<div class="main-ban f-right">
+  <div class="title">
+        <div class="right0"><a href="#" class="blue">设置</a>　 <select name="">
+          <option>导出</option>
+        </select></div>
+        情感分析
+    </div>
+    <div class="box" style="margin-top: -20px;">
+      <pie-chart config="pieConfig" data="pieData"></pie-chart>
+    </div>
+</div>
+<!-- 情感分析 [end] -->  
+
+<!-- 热门站点 [begin] --> 
+<div class="main-ban">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        热门站点
+    </div>
+    <div class="box">
+      <bar-chart config="config" data="data7"></bar-chart>
+    </div>
+</div>
+<!-- 热门站点 [end] -->  
+
+<!-- 热门板块 [begin] --> 
+<div class="main-ban f-right">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        热门板块
+    </div>
+    <div class="box">
+      <bar-chart config="config" data="data8"></bar-chart>
+    </div>
+</div>
+<!-- 热门板块 [end] -->  
+
+<!-- 发帖最多用户 [begin] --> 
+<div class="main-ban">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        发帖最多用户
+    </div>
+    <div class="box">
+     <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="105">用户</td>
+        <td width="107">网站</td>
+        <td width="84">发表的帖子数</td>
+        <td width="65">注册地</td>
+        <td width="101">关注/拥有的车型</td>
+      </tr>
+      <tr>
+        <td><a href="#" class="blue">用户A</a></td>
+        <td>网站A</td>
+        <td>999</td>
+        <td>北京</td>
+        <td>车型A</td>
+      </tr>
+</table>
+
+    </div>
+</div>
+<!-- 发帖最多用户 [end] -->  
+
+<!-- 引发回复最多用户 [begin] --> 
+<div class="main-ban f-right">
+  <div class="title">
+        <div class="right0"><select name="">
+          <option>导出</option>
+        </select></div>
+        引发回复最多用户
+    </div>
+    <div class="box">
+     <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="105">用户</td>
+          <td width="103">网站</td>
+          <td width="77">引发的回复数</td>
+          <td width="73">注册地</td>
+          <td width="104">关注/拥有的车型</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="blue">用户A</a></td>
+          <td>网站A</td>
+          <td>999</td>
+          <td>北京</td>
+          <td>车型A</td>
+        </tr>
+      </table>
+    </div>
+</div>
+<!-- 引发回复最多用户 [end] -->  
+
+</div>
+   
+   
+ 
+<div class="clearer"></div> 
+
+<!-- 尾文件 [begin] -->
+<div class="footer"> 
+    <p>Copyright @ 2016 BlueView</p>
+</div>
+<!-- 尾文件 [end] -->
+</body>
+</html>

@@ -1,0 +1,152 @@
+﻿@charset "utf-8"; 
+/* CSS Document */
+ 
+*{ margin:0; padding:0; }
+body{ font-size:12px; font-family:"微软雅黑"; color:#6d6d6d; background:#fff; -webkit-text-size-adjust:none;  }
+body,ul,li,div,p,img,input,h1,h2,h3{ margin:0; padding:0;}
+ul,li{ list-style:none;}
+img{ border:0; } 
+textarea{  resize:none; }
+select{ color:#555; font-family:"微软雅黑"; }
+input{ font-family:"微软雅黑"; }
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix{*zoom:1;}
+ 
+.clearer{ clear:both; height:0; overflow:hidden;}
+
+a{ color:#515151;text-decoration:none; }
+a:visited{} 
+
+.blue{ color:#3b3bff;}
+a.blue{ color:#3b3bff; text-decoration:underline;}
+a.blue:hover{}
+
+
+ 
+ 
+
+
+/* 网站头部定义 */ 
+.header{ width:1025px; margin:0 auto; height:60px; }   
+.header .logo{ float:left; }  
+.header .nav{ float:left; }     
+.header .nav a{ padding:0 13px; height:60px; line-height:60px; display:inline-block; *zoom:1; font-size:14px; color:#6d6d6d; margin:0 3px; }  
+.header .nav a.cur{ color:#006afe; }  
+.header .nav a:hover{ color:#006afe; } 
+.header .siderbar{ float:right; line-height:60px; } 
+
+ 
+
+ /* 网站尾部定义 */
+.footer { width:1025px; margin:0 auto; margin-top:5px; background:#3d6f99; color:#fff;  }  
+.footer p{ height:50px; line-height:50px; text-align:right; font-size:13px; padding-right:10px;  }  
+ 
+ 
+ 
+/* wrap */ 
+.wrap{ width:1025px; margin:0 auto; }  
+
+/* 报告中心 */ 
+/* 通条 */ 
+.wrap .main-all{ width:1003px; border:1px solid #999; padding:10px 10px; margin-bottom:15px;}  
+.wrap .main-all .title{ font-size:13px; color:#000; margin-bottom:10px;}  
+.wrap .main-all .ul01{ }   
+.wrap .main-all .ul01 li { clear:both; height:35px; line-height:35px; }  
+.wrap .main-all .ul01 li div{ width:300px; float:left; } 
+.wrap .main-all .ul01 li div p{ display:inline-block; width:150px; overflow:hidden; text-overflow:ellpisis; white-space:nowrap; vertical-align:middle; margin-bottom:3px;  }
+.wrap .main-all .ul01 li input[ type="checkbox"]{ vertical-align:middle; }   
+.wrap .main-all .ul01 li input[ type="text"]{ color:#999; height:18px; padding:0 5px; width:100px;}  
+.wrap .main-all .ul01 li div input[ type="text"]{ width:160px}     
+ 
+
+/* 一半的box */ 
+.wrap .main-ban{ width:498px; height:336px; border:1px solid #999; float:left; margin-bottom:10px;}  
+.wrap .main-ban.f-right{ float:right;}    
+.wrap .main-ban .title{ font-size:13px; padding:0 10px; height:30px; line-height:30px; margin-bottom:15px;} 
+.wrap .main-ban .title .right0{ float:right; }  
+.wrap .main-ban .title .right0 select{ margin-right:20px; color:#555; }  
+.wrap .main-ban .box{ text-align:center;}  
+.wrap .main-ban .box table{ width:464px; margin:0 auto; border-collapse:collapse; border:1px solid #999; margin-top:6px; }  
+.wrap .main-ban .box table td{ border:1px solid #999; height:30px; }  
+
+
+ 
+ 
+ 
+ 
+/* 监测中心 */ 
+.main-left{ width:610px; float:left; margin-bottom:10px;}  
+.main-left .title{ width:182px; height:30px; border:1px solid #999; border-bottom:0; line-height:30px; text-align:center; position:relative; z-index:100; background:#fff; border-radius:5px 5px 0 0; font-size:13px;}  
+.main-left .mainin{ border:1px solid #999; margin-top:-1px; position:relative; z-index:50;}  
+.main-left .mainin .title0{ padding:6px 10px;} 
+.main-left .mainin .title0 .right0{ float:right;} 
+.main-left .mainin .title0 select{ color:#000;} 
+.main-left .mainin .title0 input{ vertical-align:middle; } 
+
+.main-left .mainin .box{  border:1px solid #999; border-right:0; width:578px;  padding:10px 10px;  margin:5px 0 10px 10px; } 
+.main-left .mainin .box .name{ line-height:25px; font-size:14px; } 
+.main-left .mainin .box .name .pic{ position:relative; float:left; margin-right:8px;} 
+.main-left .mainin .box .name .pic input{ position:absolute; left:0; top:0;}  
+.main-left .mainin .box p{ padding:7px 0; line-height:150%;}  
+
+.wrap .main-left .mainin .page{ height:40px; line-height:30px; text-align:right; padding-right:20px;}  
+
+
+.wrap .main-right{ width:381px; float:right; margin-bottom:10px;}  
+.wrap .main-right .title{ width:182px; height:30px; border:1px solid #999; border-bottom:0; line-height:30px; text-align:center; position:relative; z-index:100; background:#fff; border-radius:5px 5px 0 0; font-size:13px;}  
+.wrap .main-right .box{ border:1px solid #999; position:relative; margin-top:-1px;  }  
+.wrap .main-right .box .title0{ height:30px; line-height:30px; border-bottom:1px solid #999; padding-left:15px; }  
+ 
+ 
+ 
+
+/* 弹出层-贴子列表 */  
+.pop-list{ width:708px; box-shadow:1px 5px 25px rgba(0,0,0,0.5); font-size:14px; color:#111; padding-bottom:2px;}  
+.pop-list .title{ padding:10px 15px 6px 15px; font-size:18px; height:35px; } 
+.pop-list .title .right0{ float:right; font-size:14px;}
+
+.pop-list .title0{ padding:6px 15px; } 
+.pop-list .title0 .right0{ float:right;} 
+.pop-list .title0 select{ color:#000; font-size:16px;} 
+.pop-list .title0 input{ vertical-align:middle; } 
+.pop-list .title0 a{ color:#000; } 
+
+.pop-list .box{ border:1px solid #999; width:658px;  padding:10px 10px;  margin:5px 0 10px 13px; } 
+.pop-list .box .name{ line-height:25px; font-size:14px; } 
+.pop-list .box .name .pic{ position:relative; float:left; margin-right:8px;} 
+.pop-list .box .name .pic input{ position:absolute; left:0; top:0;}   
+.pop-list .box p{ padding:7px 0; line-height:150%;}  
+.pop-list .page{ height:30px; line-height:30px; padding-right:30px; text-align:right;}  
+ 
+ 
+ 
+ 
+/* 弹出层-选择属性 */  
+.pop2{ width:405px; box-shadow:1px 5px 25px rgba(0,0,0,0.5);  color:#111; padding-bottom:12px;}  
+.pop2 .title{ padding:6px 15px; font-size:17px; height:35px; } 
+.pop2 .title .right0{ float:right; font-size:14px;}
+.pop2 .title2{ padding:3px 6px;}  
+.pop2 .title2 input[ type="text"]{ width:200px; padding:0 6px;} 
+.pop2 table{ width:394px; margin-left:5px; border-collapse:collapse; border:1px solid #999; margin-top:6px; }  
+.pop2 table td{ border:1px solid #999; height:23px; padding-left:15px; }  
+.pop2 .page{ height:30px; line-height:30px; padding-right:10px; text-align:right;}  
+.pop2 .btn{ text-align:center;}  
+ 
+/* 弹出层-趋势选择 */  
+.pop3{ width:430px; box-shadow:1px 5px 25px rgba(0,0,0,0.5); font-size:24px;  color:#111; padding-bottom:12px;}  
+.pop3 .title{ padding:10px 15px; height:45px; } 
+.pop3 .title .right0{ float:right; } 
+.pop3 .text{ padding:10px 30px;}  
+.pop3 .text p{ width:173px; float:left; height:50px; line-height:50px; text-align:center;  } 
+.pop3 .btn{ text-align:center; padding:10px 0 10px 0;}  
+.pop3 .btn input{ font-size:24px; padding:0 30px; border-radius:5px;}  
+
+
+  

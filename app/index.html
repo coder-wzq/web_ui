@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="BlueViewApp">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Test</title>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/d3.css" />
+  <!-- endbower -->
+</head>
+<body ng-controller="AppController">
+  <div ng-include="'views/tpl/layout.html'"></div>
+  <script src="../bower_components/angular-echarts/dist/echarts-all.js"></script>
+  <script src="plugins/d3.v3.js"></script>
+  <script src="plugins/cloud.js"></script>
+  <!-- <script src="https://www.jasondavies.com/wordcloud/cloud.min.js"></script> -->
+  <!-- bower:js -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="../bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+  <script src="../bower_components/angular-resource/angular-resource.js"></script>
+  <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <script src="../bower_components/angular-smart-table/dist/smart-table.js"></script>
+  <script src="../bower_components/angular-echarts/dist/angular-echarts.js"></script>
+  <!-- endbower -->
+  <!-- here is own js -->
+  <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/app-router.js" type="text/javascript"></script>
+  <script src="js/login/login-controller.js" type="text/javascript"></script>
+  <script src="js/bvc_car/car-service.js" type="text/javascript"></script>
+  <script src="js/bvc_car/car-router.js" type="text/javascript"></script>
+  <script src="js/bvc_car/car-controller.js" type="text/javascript"></script>
+  <script src="js/login/auth-service.js" type="text/javascript"></script>
+  <!-- end own js -->
+  <!-- start directives -->
+  <script src="js/directives/d3-test.js" type="text/javascript"></script>
+  <!-- end directives -->
+</body>
+</html>
